@@ -163,35 +163,24 @@ h4 {
   margin: auto;
 }
 
-/* Stretch goal 1 start */
 header {
   display: flex;
   align-items: center;
-  position: fixed;
-  top: 0;
-  background-color: lightgrey;
-}
-/* Stretch goal 1 end*/
-
-header nav {
-  vertical-align: 10px;
+  justify-content: space-between;
 }
 
 header nav a {
-  margin: 0 20px;
+  width: 70%;
+  margin: 20px;
   text-decoration: none;
   color: black;
-}
-
-header a img {
-  margin-left: 50px;
 }
 
 .cta {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 50px 0;
+  margin: 20px 0;
 }
 .cta-text {
   text-align: center;
@@ -253,8 +242,9 @@ footer {
 }
 
 /* services.html */
+
 .services-intro {
-  margin-top: 50px;
+  margin-top: 20px;
 }
 
 .services-intro img {
@@ -304,4 +294,92 @@ footer {
   list-style-position: inside;
   line-height: 25px;
   margin-top: 20px;
+}
+
+/* products.html */
+
+.products-intro {
+  display: flex;
+  justify-content: space-between;
+  margin: 25px 0;
+}
+
+.products-intro img {
+  width: 47%;
+}
+
+.products-intro-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 47%;
+}
+
+.products-intro-text h2,
+.products-intro-text h4 {
+  text-align: center;
+}
+
+.products-intro-colors {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.products-intro-colors_red,
+.products-intro-colors_blue,
+.products-intro-colors_white,
+.products-intro-colors_black {
+  width: 30px;
+  height: 30px;
+  border-radius: 20px;
+  margin-left: 10px;
+  border: 1px solid black;
+}
+
+.products-intro-colors_red {
+  background-color: red;
+}
+.products-intro-colors_blue {
+  background-color: blue;
+}
+.products-intro-colors_white {
+  background-color: white;
+}
+.products-intro-colors_black {
+  background-color: black;
+}
+
+.products-intro-text .price {
+  font-size: 30px;
+  color: lightblue;
+}
+
+.products-intro-text button {
+  padding: 20px 80px;
+  margin: 0 auto;
+}
+
+.products-features h2 {
+  text-align: center;
+}
+
+.products-features-items {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.products-features-items .products-features-items_child {
+  display: flex;
+  justify-content: space-between;
+  width: 32%;
+}
+
+.products-features-items .products-features-items_child img {
+  height: 36px;
+  width: 20%;
+}
+
+.products-features-items .products-features-items_child div {
+  width: 75%;
 }
