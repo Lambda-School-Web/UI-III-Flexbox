@@ -241,7 +241,7 @@ footer {
   margin-top: 50px;
 }
 
-/* services.html */
+/********* services.html ************/
 
 .services-intro {
   margin-top: 20px;
@@ -259,6 +259,15 @@ footer {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+}
+
+/* =====Stacks services items in a single column==== */
+@media screen and (max-width: 800px) {
+  .services-main {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
 }
 
 .services-main div {
@@ -296,7 +305,7 @@ footer {
   margin-top: 20px;
 }
 
-/* products.html */
+/***************** products.html *****************/
 
 .products-intro {
   display: flex;
